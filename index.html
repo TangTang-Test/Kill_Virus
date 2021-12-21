@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kill Virus</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div id="stage">
+        <div id="game"></div>
+        <div id="ui">
+
+          <!-- 显示分数 -->
+          <div class="score-ui">
+            <img src="./imgs/vir.png" alt="">
+            <span id="score-label">0</span>
+        </div>
+
+        <!-- 游戏开始 -->
+            <div id="start">
+                <div class="game-logo">
+                    <img class="logo" src="./imgs/logo.png" alt="">
+                    <p>屏幕上方有带字母的“病毒”落下，按下键盘对应的按键，消灭病毒，否则，你将被“病毒”消灭😈</p>
+                </div>
+                <footer>
+                  <div id="start-btn">点击屏幕开始游戏</div>
+                  <p> Created By Katherine </p>
+              </footer>
+            </div>
+
+            <!-- 游戏失败 -->
+            <div id="game-over">
+                <h1>任务失败</h1>
+                <div id="restart-btn">重 玩</div>
+            </div>
+
+            <!-- 通关 -->
+            <div id="game-next">
+              <h1>本关结束</h1>
+              <div id="next-btn">下一关</div>
+          </div>
+        </div>
+    </div>
+
+    <audio src="./imgs/xm2.mp3" id="xm"></audio>
+
+<script src="./index.js"></script> 
+</body>
+</html>
